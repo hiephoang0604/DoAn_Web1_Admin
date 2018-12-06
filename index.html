@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Untitled Document</title>
+
+		<!-- Load font awesome icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		 crossorigin="anonymous">
+
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script type="text/javascript" src="admin_js.js"></script>
+      <script type="text/javascript" src="products.js"></script>
+   </head>
+   </head>
+   <body>
+      <section>
+         <div class="header">
+            <div class="logo"><a href="index.html"> <img src="img/logo.jpg"> </a></div>
+            <div class="inheader"> Xin chào Admin | <a href="#">Đăng xuất</a> </div>
+         </div>
+         
+         <div class="home">
+            <div onclick="openProducts()"><img src="img/san-pham.png"><br>Sản phẩm</div>  
+            <div onclick=""><img src="img/don-hang.png"><br>Đơn hàng</a></div>
+         </div>
+         
+         <div id="products" class="products">
+            <div class="close" onclick="closeProducts()"><i class="fa fa-close"></i></div>
+
+            <div class="them">Thêm sản phẩm :<button onclick="openAdd()">&#43;</button></div>
+            <p class="timkiem">Tìm kiếm theo tên sản phẩm : </p>   
+               <input style="float: left;margin: 5px; border-radius: 4px;" id="search_name" name="search_name" placeholder="Nhập tên sản phẩm..." onkeyup="checkProducts_Name()">
+            <p class="timkiem" ">Tìm kiếm theo mã sản phẩm : </p>
+               <input style="float: left;margin: 5px 5px 15px; border-radius: 4px;" id="search_id" name="search" placeholder="Nhập mã sản phẩm..." onkeyup="checkProducts_Id()">
+            <div class="sanpham"><table id="the_lists" border="1"></table></div>
+         </div>
+
+         <div class="area_change" id="area_change">
+            <div class="back" onclick="backInChange()"><i class="fa fa-arrow-left"></i></div>
+            <div style="width: 45%;float: left; border: 2px solid #000;padding: 15px 0 10px 10px; border-radius: 15px;" id="info_product">
+            </div>
+            <div style="width: 50%;float: right; border: 2px solid #000; padding: 15px 0 10px 10px; border-radius: 15px;" id="change_product">
+            </div>
+            <div id="buttonchange"></div>
+         </div>
+
+         <div class="area_add" id="area_add">
+            <div class="back" onclick="backInAdd()"><i class="fa fa-arrow-left"></i></div>
+            <div style="width: 32%;float: left; border: 2px solid #000;padding: 10px 0 10px 10px; border-radius: 15px; margin: 0 0 0 420px;" id="add_product"></div>
+         </div>
+      </section>
+   </body>
+</html>

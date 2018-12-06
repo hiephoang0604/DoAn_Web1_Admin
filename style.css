@@ -1,0 +1,202 @@
+@charset "utf-8";
+/* CSS Document */
+section {
+    max-width: 1205px;
+    margin: 0 auto;
+}
+.header{
+	width: 1205px;
+	border-bottom: 3px solid #dcdcdc;
+	height: 80px;
+	-moz-box-shadow: 0px 0px 8px #dcdcdc;
+	-webkit-box-shadow: 0px 0px 8px #dcdcdc;
+}
+.logo {
+	width: 250px;
+	height: 30px;
+	margin: 0 15px;
+	padding: 10px;
+}
+.logo img{
+	width: 250px;
+	height: 60px;
+}
+.inheader {
+	float: right;
+	margin: 10px 15px;
+}
+.inheader a{
+	color: #000000;
+	text-decoration: none;
+}
+.inheader a:hover{
+	color: #ED9109;
+}
+.home{
+	float: right;	
+	width: 50%;
+}
+.home a, .home div{
+	width: 120px;
+	padding: 10px;
+	border: 3px solid #dcdcdc;
+	height: 50px;
+	float: left;
+	margin: 10px 0 10px 10px;
+	text-align: center;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-o-border-radius: 20px;
+}
+.home a{
+	text-decoration: none;
+}
+.home a:hover img, .home div:hover img{
+	opacity: 1;
+	color: #5b5b5b;
+	padding-top: 9px;
+}
+.home img {
+	width: 40px;
+	height: 30px;
+	opacity: 0.8;
+    -webkit-transition: padding-top 250ms ease-out;
+	-moz-transition: padding-top 250ms ease-out;
+	-o-transition: padding-top 250ms ease-out;
+}
+.close{
+	font-size: 30px;
+	margin: 0 0 10px;
+	text-align: right;
+}
+.close i:hover{
+	color: #FF0004;
+}
+.back{
+	margin: 100px 0 10px;
+	text-align: left;
+}
+.back i:hover{
+	color: #0D00F5;
+}
+.products{
+	display: none;
+	padding: 5px;
+	float: left;
+	border: 2px solid #ddd;
+	border-collapse: collapse;
+	border: none;
+}
+.them{
+	float: left;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 5px 0 0 200px;
+}
+.them button{
+	border-radius: 10px;
+	font-weight: 20px;
+	font-size: 20px;
+}
+.them button:hover{
+	color: #fff;
+	background: #CF8000;
+	border: 2px solid #CF8000;
+}
+.timkiem{
+	clear: both;
+	float: left;
+	margin: 5px 0 0 200px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.sanpham{
+	font-size: 18px;
+	clear: both;
+}
+.sanpham img{
+	width: 100px;
+	height: 100px;
+}
+.sanpham a{
+	text-decoration: none;
+	color: #000000;
+}
+.sanpham a:hover{
+	color: #FF0004;
+}
+.xoa-sanpham i:hover{
+	color: #FF0004;
+}
+.sua-sanpham i:hover{
+	color: #000BFF;
+}
+.sanpham table{
+	width: 1205px;
+	border-collapse: collapse;
+	text-align: center;
+	clear: both;
+}
+.sanpham table tr td{
+	float: center;
+}
+.sanpham table tr:nth-child(even) {
+  background: #D9D9D9;
+}
+
+.area_change
+{
+	display: none;
+	margin: 10px 50px 0 50px;
+}
+.area_change img{
+	width: 100px;
+	height: 100px;
+}
+.area_change input{
+	border-radius: 4px;
+	border: 1px solid #000;
+
+}
+.area_change button{
+	margin: 10px 0 0 200px;
+	padding: 5px;	
+	border-radius: 10px;
+	width: 140px;
+	height: 50px;
+	font-size: 25px;
+}
+.area_change button:hover{
+	color: #fff;
+	background: #000BFF;
+	border: 2px solid #000BFF;
+}
+
+.area_add
+{
+	display: none;
+}
+
+.area_add img{
+	width: 100px;
+	height: 100px;
+}
+.area_add input{
+	border-radius: 4px;
+	border: 1px solid #000;
+
+}
+.area_add button{
+	margin: 10px 0 0 110px;
+	padding: 5px;	
+	border-radius: 10px;
+	width: 140px;
+	height: 50px;
+	font-size: 25px;
+}
+.area_add button:hover{
+	color: #fff;
+	background: #FB9500;
+	border: 2px solid #FB9500;
+}
